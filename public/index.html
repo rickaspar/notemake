@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="rounded-container"> 
+        <div class="title-header">
+            <h1>Create and Edit Your Notes </h1>
+        </div>
+        <div class="container-info">
+            <h3>Select one of the options below</h3>
+        </div>
+        <div class="section-divider-horiz"></div>
+        <br>
+        <br>
+
+        <div class="rounded-container">
+            <div id="crudContainer" class="crud-container">
+                <div class="crud-cards">
+                    <button id="crud-read">Show All records</button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="input-output-container">
+                <div id="id-details"> 
+                    <form id="input_form">
+                        <p id="message">Enter Details for a new record, or select a record from the list to update or delete   </p><br><br>
+                        <label  id="note-id">id</label><br><br> 
+                        <!-- <input type="text" id="note-id" value="id" ><br><br> -->
+                        <label for="note-name">Name</label>
+                        <input type = "text" id = "note-name" value=""><br><br>
+                        <label for="note-height">height</label>
+                        <input type="number" id="note-height" value=""><br><br>
+                        <label for="note-age">age</label>
+                        <input type="number" id="note-age" value=""><br><br>   
+                    </form>
+                    <div class="in-buttons">
+                        <button id="crud-create">Create</button>
+                        <button id="crud-update">Update</button>
+                        <button id="crud-delete">Delete</button>
+                    </div>
+                    </div>   
+                <div id="output-container">
+                    <div class="note-list"></div>    
+                </div>
+            </div>
+        </div>
+
+    </div>
+   <script src="./script.js"></script> 
+</body>
+
+</html>
